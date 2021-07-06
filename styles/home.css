@@ -35,10 +35,11 @@ button{
     background-color: rgba(202, 199, 202, 0.527);
     border-color: black;
     border-radius: 50%;
+    border-width: 1px;
     
 }
 button:hover{
-background-color: rgba(1, 46, 83, 0.274);
+background-color: white;
 
 }
 img{
