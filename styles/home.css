@@ -1,1 +1,53 @@
-/* add home page styles here */
+li{
+list-style: none;
+display: flex;
+flex-direction: column;
+text-align: center;
+justify-content: space-evenly;
+padding: 3px;
+margin: 3px;
+
+
+}
+
+li:hover{
+
+    color:rgb(10, 38, 61);
+    font-weight: bold;
+    font-size: 15px;
+  
+}
+
+
+#main-section{
+    display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+padding: 5px;
+
+}
+
+button{
+    height: 40px;
+    width: 100px;
+    margin-left: 60px;
+    margin-top: 10px;
+    background-color: rgba(202, 199, 202, 0.527);
+    border-color: black;
+    border-radius: 50%;
+    
+}
+button:hover{
+background-color: rgba(1, 46, 83, 0.274);
+
+}
+img{
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    
+}
+main{ 
+    background-color: rgb(230, 230, 230);
+}
+
