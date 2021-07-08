@@ -1,8 +1,10 @@
+
+
 li{
 list-style: none;
 display: flex;
 flex-direction: column;
-text-align: center;
+text-align: justify;
 justify-content: space-evenly;
 padding: 3px;
 margin: 20px;
@@ -14,7 +16,7 @@ li:hover{
 
     color:rgb(10, 38, 61);
     font-weight: bold;
-    font-size: 15px;
+    
   
 }
 
@@ -24,6 +26,7 @@ li:hover{
 flex-direction: row;
 justify-content: space-evenly;
 padding: 5px;
+flex-wrap: wrap;
 
 }
 
@@ -50,6 +53,7 @@ img{
 }
 main{ 
     background-color: rgb(230, 230, 230);
+  
 }
 
 .logo{
