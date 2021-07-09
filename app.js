@@ -8,7 +8,11 @@
   // update DOM to reflect the new state
 import { createProductList } from './utils.js';
 import products from './data/products.js';
+
 import { addItemToCart } from './storage-utils.js';
+
+
+
 
 
 
@@ -26,6 +30,7 @@ function showProducts(){
     }
 
     view_products_btn.style.display = 'none';
+
 
     const add_to_cart_btn = document.getElementsByClassName('add-to-cart-btn');
     const item_qty = document.getElementsByClassName('qty');
@@ -50,4 +55,23 @@ function showProducts(){
 
 }
 
+
+
+   // const add_to_cart_btn = document.getElementsByClassName('add-to-cart-btn');
+
+   
+
+}
+
+
+/*for (let btn of add_to_cart_btn){
+
+    btn.addEventListener('click', ()=>{
+
+        console.log(btn.value);
+        
+
+    });
+
+}*/
 
