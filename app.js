@@ -6,7 +6,9 @@
   // get user input
   // use user input to update state 
   // update DOM to reflect the new state
-import { products, createProductList } from './utils.js';
+import { createProductList } from './utils.js';
+import products from './data/products.js';
+import { addItemToCart, getCart } from './storage-utils.js';
 
 
 
@@ -25,5 +27,27 @@ function showProducts(){
 
     view_products_btn.style.display = 'none';
 
+    const add_to_cart_btn = document.getElementsByClassName('add-to-cart-btn');
+    const item_qty = document.getElementsByClassName('qty');
+
+    for (let btn of add_to_cart_btn){
+
+        btn.addEventListener('click', ()=>{
+    
+            addItemToCart(btn.value);
+
+            for (let i = 0; i < item_qty.length; i++){
+
+                if (item_qty[i].id === btn.value){
+                    item_qty[i].textContent = Number(item_qty[i].textContent) + 1;
+                }
+
+            }
+
+        });
+    
+    }
 
 }
+
+
