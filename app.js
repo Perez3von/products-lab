@@ -8,7 +8,7 @@
   // update DOM to reflect the new state
 import { createProductList } from './utils.js';
 import products from './data/products.js';
-import { addItemToCart, getCart } from './storage-utils.js';
+import { addItemToCart } from './storage-utils.js';
 
 
 

@@ -14,7 +14,7 @@ const place_order = document.getElementById('place-order');
 function renderCart(){
 
     const cart = getCart();
-    console.log(cart.length);
+    //console.log(cart.length);
     for (let item of cart) {
         const product = searchId(products, item.id);
         const tr = generateTableRow(product, item);
