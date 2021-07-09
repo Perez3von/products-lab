@@ -57,21 +57,4 @@ function showProducts(){
 
 
 
-   // const add_to_cart_btn = document.getElementsByClassName('add-to-cart-btn');
-
-   
-
-}
-
-
-/*for (let btn of add_to_cart_btn){
-
-    btn.addEventListener('click', ()=>{
-
-        console.log(btn.value);
-        
-
-    });
-
-}*/
 
