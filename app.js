@@ -9,6 +9,10 @@
 import { createProductList } from './utils.js';
 import products from './data/products.js';
 
+import { addItemToCart } from './storage-utils.js';
+
+
+
 
 
 
@@ -27,6 +31,32 @@ function showProducts(){
 
     view_products_btn.style.display = 'none';
 
+
+    const add_to_cart_btn = document.getElementsByClassName('add-to-cart-btn');
+    const item_qty = document.getElementsByClassName('qty');
+
+    for (let btn of add_to_cart_btn){
+
+        btn.addEventListener('click', ()=>{
+    
+            addItemToCart(btn.value);
+
+            for (let i = 0; i < item_qty.length; i++){
+
+                if (item_qty[i].id === btn.value){
+                    item_qty[i].textContent = Number(item_qty[i].textContent) + 1;
+                }
+
+            }
+
+        });
+    
+    }
+
+}
+
+
+
    // const add_to_cart_btn = document.getElementsByClassName('add-to-cart-btn');
 
    
@@ -44,3 +74,4 @@ function showProducts(){
     });
 
 }*/
+

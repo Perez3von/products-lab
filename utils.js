@@ -26,16 +26,24 @@ export function createProductList(obj, parentNode){
     product_image.src = `./assets/${obj.image}`;
     product_image.alt = obj.brand;
 
+    const qty = document.createElement('span');
+    qty.classList.add('qty');
+    qty.id = obj.id;
+    qty.textContent = 0;
+
+
+
+    
     price_tag.appendChild(price_tag_text);
     product_description.appendChild(product_description_text);
     brand_name.appendChild(brand_text);
-
     li_ele.appendChild(brand_name);
     li_ele.appendChild(product_image);
     li_ele.appendChild(product_description);
     li_ele.appendChild(price_tag);
+    li_ele.appendChild(qty);
     li_ele.appendChild(add_product_btn);
-
+    
     parentNode.appendChild(li_ele);
 
 }
